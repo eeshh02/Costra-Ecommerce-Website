@@ -94,8 +94,10 @@ body{
   min-width: 120px;
   box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
   margin-top: 1rem;
+  margin-left: -3rem;
 
 }
+
 
 .dropdown-content a {
     color: black;
@@ -107,9 +109,20 @@ body{
     color: var(--main-color);
   }
 
+#user-btn{
+    cursor: pointer;
+}
+
+.header .icons #user-btn.show{
+    transform: scaleY(1);
+}
+
 #user-btn:hover .dropdown-content {
     display: block;
+    
 }
+
+
 
 .header .search-form{
     position: absolute;
@@ -680,6 +693,10 @@ section{
     }
 
     .header .search-form.show{
+        transform: scaleY(1);
+    }
+
+    .header .icons #user-btn.show{
         transform: scaleY(1);
     }
 }

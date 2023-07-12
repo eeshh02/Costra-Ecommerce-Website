@@ -19,13 +19,13 @@
         </a>
 
         <nav class="navbar">
-          <a class="active" href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#menu">Menu</a>
-          <a href="#products">Products</a>
-          <a href="#review">Reviews</a>
-          <a href="#contact">Contact</a>
-          <a href="#blogs">Blogs</a>
+          <a class="active" href="coffee.html">Home</a>
+          <a href="coffee.html">About</a>
+          <a href="coffee.html">Menu</a>
+          <a href="coffee.html">Products</a>
+          <a href="coffee.html">Reviews</a>
+          <a href="coffee.html">Contact</a>
+          <a href="coffee.html">Blogs</a>
         </nav>
 
         <div class="icons">
@@ -63,5 +63,22 @@
     </div>
 </div>
 </section>
+
+
+<script>
+       $(document).ready(function(){
+        $('#menu-btn').click(function(){
+            $('.navbar').toggleClass('show');
+    });
+
+});
+
+   $(document).ready(function(){
+            $('#user-btn').click(function(){
+                $('.dropdown-content').toggleClass('show');
+        });
+
+    });
+</script>
 </body>
 </html>

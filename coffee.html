@@ -30,8 +30,8 @@
         <div class="icons">
             <div class="fas fa-user" id="user-btn">
             <div class="dropdown-content">
-                <a href="#">Log In</a>
-                <a href="#">Sign Up</a>
+                <a href="login.html">Log In</a>
+                <a href="signup.html">Sign Up</a>
             </div>
             </div>
             <div class="fas fa-search" id="search-btn"></div>
@@ -364,6 +364,13 @@
     $(document).ready(function(){
             $('#search-btn').click(function(){
                 $('.search-form').toggleClass('show');
+        });
+
+    });
+
+    $(document).ready(function(){
+            $('#user-btn').click(function(){
+                $('.dropdown-content').toggleClass('show');
         });
 
     });
